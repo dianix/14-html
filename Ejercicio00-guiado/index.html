@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Formulario en html</title>
+  <link href="https://fonts.googleapis.com/css?family=Baloo+Bhaina" rel="stylesheet" type="text/css">
+  <style>
+    body{
+      color: white;
+      background-color: gray;
+      font-family: Baloo Bhaina;
+    }
+    label{
+      color: violet;
+    }
+  </style>
+</head>
+<body align="center">
+
+  <h1>FORMULARIO</h1>
+  <h3>Ingresa los siguientes datos</h3>
+  <form action="">
+    <label>Nombre y Apellido:</label><br>
+    <input type="text" placeholder="Nombre y Apellido" required=""><br>
+
+    <label>Teléfono:</label><br>
+    <input type="text" pattern="^[55]\d{8}$" placeholder="55 ********" required=""><br>
+
+    <label>Fecha de nacimiento:</label><br>
+    <input type="date" required=""><br>
+
+    <label>Color favorito:</label><br>
+    <select value="Color favorito" required="">
+      <option value="Opcion 1">Azul</option>
+      <option value="">Morado</option>
+      <option value="">Naranja</option>
+    </select><br>
+
+    <label>Correo electrónico:</label><br>
+    <input type="email" required=""><br>
+
+    <label>Contraseña:</label><br>
+    <input type="password" name="psw" pattern=".{6,}" title="6 o más caracteres" required=""><br>
+
+    <input type="submit" value="Enviar"/>
+
+  </form>
+</body>
+</html>
